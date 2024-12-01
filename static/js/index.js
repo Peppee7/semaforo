@@ -6,7 +6,7 @@ function getRandom(min = 0, max = 100) {
     return n;
 }
 
-getRandom(4000, 10000)
+getRandom(1000, 2000)
 
 let bg1_1 = document.querySelector("[class=background-1-1]")
 let bg2_1 = document.querySelector("[class=background-2-1]")
@@ -38,6 +38,10 @@ function color1() {
     bg3_1.classList.add("redBg")
     bg4_1.classList.add("redBg")
     bg5_1.classList.add("redBg")
+
+    n = 0
+    getRandom(1000, 2000)
+    setTimeout(color2, n);
 }
 
 function color2() {
@@ -46,6 +50,10 @@ function color2() {
     bg3_2.classList.add("redBg")
     bg4_2.classList.add("redBg")
     bg5_2.classList.add("redBg")
+
+    n = 0
+    getRandom(1000, 2000)
+    setTimeout(color3, n);
 }
 
 function color3() {
@@ -54,6 +62,10 @@ function color3() {
     bg3_3.classList.add("redBg")
     bg4_3.classList.add("redBg")
     bg5_3.classList.add("redBg")
+
+    n = 0
+    getRandom(1000, 2000)
+    setTimeout(color4, n);
 }
 
 function color4() {
@@ -62,10 +74,13 @@ function color4() {
     bg3_4.classList.add("redBg")
     bg4_4.classList.add("redBg")
     bg5_4.classList.add("redBg")
+
+    n = 0
+    getRandom(1000, 3000)
+    setTimeout(start, n);
 }
 
 function start() {
-
     let date1 = new Date()
     time = date1.getTime()
 
@@ -153,9 +168,4 @@ if(flag == 0) {
     button.addEventListener("click", callback)
 }
 
-setTimeout(color1, 1000);
-setTimeout(color2, 2000);
-setTimeout(color3, 3000);
-setTimeout(color4, 4000);
-
-setTimeout(start, n);
+setTimeout(color1, n);
