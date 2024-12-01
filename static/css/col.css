@@ -1,35 +1,33 @@
 .col {
     background-color: black;
-    width: 50px;
-    height: 100px;
+    width: 100px;
+    height: 500px;
     position: absolute;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
+    border-radius: 20px;
+    border: 5px solid white;
 }
 
 .cl-1 {
     margin-top: 50px;
-    margin-left: 100px;
+    margin-left: -600px;
 }
 
 .cl-2{
     margin-top: 50px;
-    margin-left: 200px;
+    margin-left: -300px;
 }
 
 .cl-3 {
     margin-top: 50px;
-    margin-left: 300px;
+    margin-left: 0px;
 }
 
 .cl-4 {
     margin-top: 50px;
-    margin-left: 400px;
+    margin-left: 300px;
 }
 
 .cl-5 {
     margin-top: 50px;
-    margin-left: 700px;
+    margin-left: 600px;
 }
